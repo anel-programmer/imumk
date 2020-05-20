@@ -1,1 +1,56 @@
+.card-title {
+	font-size: 14px;
+}
+.card-body{
+	padding: 10px 16px;
+}
+.card-body p {
+	margin: 0 0 .4em 0;
+    padding-left: .5em;
+    font-size: 14px;
+    font-weight: normal;
+}
+.card-body .card-genre{
+	margin-top: -.4em;
+    font-size: 11px;
+}
+.card-body .card-meta{
+	font-size: 12px;
+    font-weight: 600;
+}
+.courses-sci {
+    width: 170px;
+    min-height: 260px;
+    border: solid 1px #b5b5b5;
+    border-radius: 10px;
+    background: #fff;
+	margin: 0 0 55px;
+}
 
+.sci-figure {
+    position: relative;
+    overflow: hidden;
+    height: 134px;
+    background: #ddd;
+}
+.header {
+	margin: 0 0 55px;
+}
+.filter {
+	margin: 0 0 55px;
+}
+
+/* search */
+.courses-form-search-btn {
+   
+    width: 32px;
+    height: 32px;
+    line-height: normal;
+    background: #ffffff url(../images/icons/icon-search-25.png) center no-repeat;
+    border: 0;
+    border-radius: 4px;
+}
+
+
+
+	
