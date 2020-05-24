@@ -20,18 +20,13 @@ $( document ).ready(function(){
 			  url: "http://krapipl.imumk.ru:8082/api/mobilev1/update", // строка, содержащая URL адрес, на который отправляется запрос
 			  data: '',
 			  success: function(result){
-				   console.log(textStatus);
-				  console.log(2);
-					console.log(result);
-				  	arrList = [];
+				    	arrList = [];
 					for (var i = 0; i < result.items.length; i++) {
 						arrList[i] = result.items[i];
 					}
 					showList();
 				},
 				error: function(error){
-					 console.log(error);
-					console.log(1);
 					var data = statResult;
 					console.log(data);
 					arrList = [];
