@@ -18,7 +18,7 @@ $( document ).ready(function(){
 			//загрузка данных в формате json с сервера
 			$.ajax({
 			  type: "POST", // метод HTTP, используемый для запроса	
-			  url: "https://krapipl.imumk.ru:8082/api/mobilev1/update", // строка, содержащая URL адрес, на который отправляется запрос
+			  url: "http://krapipl.imumk.ru:8082/api/mobilev1/update", // строка, содержащая URL адрес, на который отправляется запрос
 			  data: '',
 			  success: function(result){
 				  console.log(2);
