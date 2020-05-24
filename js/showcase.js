@@ -18,18 +18,35 @@ $( document ).ready(function(){
 			//загрузка данных в формате json с сервера
 			$.ajax({
 			  type: "POST", // метод HTTP, используемый для запроса	
-			  url: "http://krapipl.imumk.ru:8082/api/mobilev1/update", // строка, содержащая URL адрес, на который отправляется запрос
+			  url: "https://krapipl.imumk.ru:8082/api/mobilev1/update", // строка, содержащая URL адрес, на который отправляется запрос
 			  data: '',
 			  success: function(result){
+				  console.log(2);
+					console.log(result);
 				  	arrList = [];
 					for (var i = 0; i < result.items.length; i++) {
 						arrList[i] = result.items[i];
 					}
 					showList();
 				},
+				error: function(error){
+					console.log(1);
+					var data = statResult;
+					console.log(data);
+					arrList = [];
+					for (var i = 0; i < data.length; i++) {
+						arrList[i] = data[i];
+					}
+					showList();
+				},
+								
 			  dataType: "json" // тип данных, который вы ожидаете получить от сервера	
 			});
+					
+			
+			
 		}
+		
 		
 		
 		//вывод списка курсов на экран
