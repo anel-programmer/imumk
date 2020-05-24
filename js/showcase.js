@@ -28,7 +28,6 @@ $( document ).ready(function(){
 				},
 				error: function(error){
 					var data = statResult;
-					console.log(data);
 					arrList = [];
 					for (var i = 0; i < data.length; i++) {
 						arrList[i] = data[i];
